@@ -69,7 +69,7 @@ The following commands are an example to convert a pretrained YOLOv5 network to 
 ```bash
 cd ~
 git clone https://github.com/ultralytics/yolov5.git
-pip install -U -r yolov5/requirements.  
+pip install -U -r yolov5/requirements.txt
 mkdir -p yolov5/pretrained
 cd yolov5/pretrained/
 wget https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5n.pt
