@@ -32,7 +32,7 @@ bash /opt/intel/openvino_2021/deployment_tools/model_optimizer/install_prerequis
 
 ## Usage
 
-An .ONNX file is required to perform the following commands, see [`this example of generating such a file`](#optional---onnx-file-from-a-yolov5-model) for an example of generating such a file.
+An .ONNX file is required to perform the following commands, see [`this example for generating such a file`](#optional---onnx-file-from-a-yolov5-model).
 
 Setup the environment
 ```bash
