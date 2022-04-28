@@ -1,5 +1,7 @@
 # Instructions for the installation and use of the .BLOB file generator
 
+The source of this procedure is [this Collab notebook](https://colab.research.google.com/github/luxonis/depthai-ml-training/blob/master/colab-notebooks/YoloV5_training.ipynb) where the authors explain the training of a custom network before sending it to a DepthAI camera.
+
 > This procedure is written for Ubuntu but easily works inside a WSL distro on Windows.
 
 ## Setup of all the required tools
@@ -42,7 +44,7 @@ source /opt/intel/openvino_2021/bin/setupvars.sh
 
 Optimize the ONNX model to create an OpenVINO model (.bin & .xml files)
 ```bash
-mo.py --data_type FP16 --reverse_input_channel --scale 255 --output_dir openvino_models/ --input_model yolov5/pretrained/yolov5n.onnx
+mo.py --data_type FP16 --reverse_input_channel --scale 255 --output_dir openvino_models/ --input_model ../yolov5/pretrained/yolov5n.onnx
 ```
 > Adding the input shape to the parameters may remove some errors `--input_shape [1,3,640,640]`
 
