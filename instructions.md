@@ -4,6 +4,13 @@ The source of this procedure is [this Collab notebook](https://colab.research.go
 
 > This procedure is written for Ubuntu but easily works inside a WSL distro on Windows.
 
+## Table of Content
+
+- [Setup](#setup-of-all-the-required-tools)
+- [Usage](#usage)
+- [ONNX generation](#optional---onnx-file-from-a-yolov5-model)
+- [On-Device Decoding](#optional---pruning-an-onnx-model-for-on-device-decoding)
+
 ## Setup of all the required tools
 
 Create a working directory and download the installation files for the OpenVINO toolkit (here version 2021.4 LTS)
